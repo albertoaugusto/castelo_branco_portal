@@ -5,10 +5,9 @@
     $dbname = "castelo";
     $port = 3306;
 
-    try{
-       $conn = new PDO("mysql:host=$host;port=$port;dbname=" . $dbname, $user, $pass);
-        echo "Conexão realizada";
-    } catch(PDOException $err){
-        echo "Erro na conexão: " . $err->getMessage();
+    $mysqli = new mysqli($host, $user, $pass, $dbname, $port);
+    
+    if ($mysqli -> error) {
+        die("erro na conexão" . $mysqli->error);
     }
 ?>
