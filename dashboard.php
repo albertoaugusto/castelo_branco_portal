@@ -117,6 +117,21 @@ include('protect.php');
             grid-row: 4/5;
             align-self: center;
         }
+
+        @media screen and (max-width: 1366px) {
+            .card {
+                margin: 15px;
+                padding: 15px;
+                width: 500px;
+                min-height: 200px;
+                display: grid;
+                grid-template-rows: 20px 50px 1fr 50px;
+                border-radius: 10px;
+                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+                transition: all 0.2s;
+                color: #000;
+            }
+        }
     </style>
 </head>
 
@@ -137,28 +152,28 @@ include('protect.php');
         <div class="cards">
             <div class="card card-1">
                 <div class="card__icon"><i class="bi bi-paperclip"></i></div>
-                <h2 class="card__title">Atas.</h2>
+                <h2 class="card__title">Atas</h2>
                 <p class="card__apply">
-                    <a class="card__link" href="#">Acessar <i class="bi bi-arrow-right"></i></a>
+                    <a class="card__link" href="notes.php">Acessar <i class="bi bi-arrow-right"></i></a>
                 </p>
             </div>
             <div class="card card-1">
                 <div class="card__icon"><i class="bi bi-envelope-paper"></i></div>
-                <h2 class="card__title">Comunicados.</h2>
+                <h2 class="card__title">Comunicados</h2>
                 <p class="card__apply">
-                    <a class="card__link" href="#">Acessar <i class="bi bi-arrow-right"></i></a>
+                    <a class="card__link" href="releases.php">Acessar <i class="bi bi-arrow-right"></i></a>
                 </p>
             </div>
             <div class="card card-1">
                 <div class="card__icon"><i class="bi bi-coin"></i></div>
-                <h2 class="card__title">Contas.</h2>
+                <h2 class="card__title">Contas</h2>
                 <p class="card__apply">
-                    <a class="card__link" href="#">Acessar <i class="bi bi-arrow-right"></i></a>
+                    <a class="card__link" href="bills.php">Acessar <i class="bi bi-arrow-right"></i></a>
                 </p>
             </div>
             <div class="card card-1">
-                <div class="card__icon"><i class="fas fa-bolt"></i></div>
-                <h2 class="card__title">Recados.</h2>
+                <div class="card__icon"><i class="bi bi-file-text"></i></div>
+                <h2 class="card__title">Contratos</h2>
                 <p class="card__apply">
                     <a class="card__link" href="#">Acessar <i class="bi bi-arrow-right"></i></a>
                 </p>

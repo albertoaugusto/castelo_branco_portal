@@ -66,6 +66,10 @@ if (isset($_POST['user']) || isset($_POST['pass'])) {
             background-repeat: no-repeat;
         }
 
+        .container a {
+            text-align: center;
+        }
+
         .formLogin {
             display: flex;
             flex-direction: column;
@@ -77,7 +81,7 @@ if (isset($_POST['user']) || isset($_POST['pass'])) {
         }
 
         .formLogin h1 {
-            padding: 0;
+            padding: 1rem;
             margin: 0;
             font-weight: 500;
             font-size: 2.3em;
@@ -121,6 +125,17 @@ if (isset($_POST['user']) || isset($_POST['pass'])) {
             color: #000;
 
         }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            margin-top: 1rem;
+            transition: .2s all;  
+        }
+
+        a:hover{
+            color: #cecece;
+        }
     </style>
 </head>
 
@@ -138,6 +153,8 @@ if (isset($_POST['user']) || isset($_POST['pass'])) {
                 <input type="password" name="pass" id="pass" class="input pass" placeholder="Senha">
 
                 <input type="submit" value="Acessar" class="btn">
+
+                <a href="index.html">Retornar para o portal</a>
             </form>
         </section>
     </main>
